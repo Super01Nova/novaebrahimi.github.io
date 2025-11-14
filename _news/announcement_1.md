@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-7-1 
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our paper has been published in the <a href="https://www.mdpi.com/journal/virtualworlds" target="_blank">Virtual Worlds Journal</a>. I am honored that my work introducing the Socio-Spatial Embodiment Model for conceptualizing learning in virtual worlds is featured on the front page of the journal.

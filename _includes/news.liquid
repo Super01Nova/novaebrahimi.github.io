@@ -1,25 +1,42 @@
 <div class="news">
-  {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
-      {% endif %}
-    >
+  {% if include.limit == true %}
+    {% assign news_size = site.announcements.limit | default: 5 %}
+  {% else %}
+    {% assign news_size = include.limit | default: site.announcements.limit | default: 5 %}
+  {% endif %}
+  
+  {% if site.announcements.scrollable %}
+    {% assign news_limit_scroll = site.announcements.scrollable_limit | default: 5 %}
+  {% endif %}
+  
+  {% assign news = site.news | reverse %}
+
+  {% if news.size == 0 %}
+    <p>No news so far...</p>
+  {% else %}
+    <div class="table-responsive {% if site.announcements.scrollable and news_size > news_limit_scroll %}scrollable{% endif %}">
       <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
-          {% assign news_limit = page.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
+        {% for item in news limit: news_size %}
+          <tr class="news-row">
+            <th scope="row" class="news-date">
+              {{ item.date | date: "%b %-d, %Y" }}
+            </th>
+            <td class="news-content-cell">
               {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                <div class="news-item">
+                  <div class="news-toggle" data-bs-toggle="collapse" data-bs-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
+                    <div class="news-preview-wrapper">
+                      <div class="news-preview-text">{{ item.content | strip_html }}</div>
+                      <div class="news-fade"></div>
+                    </div>
+                    <i class="fas fa-chevron-down news-icon"></i>
+                  </div>
+                  <div class="collapse" id="collapse-{{ forloop.index }}">
+                    <div class="news-full-content mt-2">{{ item.content }}</div>
+                  </div>
+                </div>
+              {% elsif item.related_posts %}
+                <a href="{{ item.related_posts.permalink }}">{{ item.related_posts.title }}</a>
               {% else %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}
@@ -28,7 +45,48 @@
         {% endfor %}
       </table>
     </div>
-  {% else %}
-    <p>No news so far...</p>
   {% endif %}
 </div>
+
+<script>
+(function() {
+  function initNewsCollapse() {
+    var toggles = document.querySelectorAll('.news-toggle');
+    
+    toggles.forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        var targetId = this.getAttribute('data-bs-target');
+        var target = document.querySelector(targetId);
+        var icon = this.querySelector('.news-icon');
+        var previewWrapper = this.querySelector('.news-preview-wrapper');
+        
+        if (target) {
+          if (target.classList.contains('show')) {
+            // Collapse
+            target.classList.remove('show');
+            target.style.display = 'none';
+            if (previewWrapper) previewWrapper.style.display = 'block';
+            if (icon) icon.style.transform = 'rotate(0deg)';
+            this.setAttribute('aria-expanded', 'false');
+          } else {
+            // Expand
+            target.classList.add('show');
+            target.style.display = 'block';
+            if (previewWrapper) previewWrapper.style.display = 'none';
+            if (icon) icon.style.transform = 'rotate(180deg)';
+            this.setAttribute('aria-expanded', 'true');
+          }
+        }
+      });
+    });
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNewsCollapse);
+  } else {
+    initNewsCollapse();
+  }
+})();
+</script>

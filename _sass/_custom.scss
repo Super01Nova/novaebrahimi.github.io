@@ -1,0 +1,195 @@
+/* Force profile image to be non-clickable */
+.profile figure,
+.profile picture,
+.profile img,
+.profile a {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* But allow other content in profile to be clickable */
+.profile .more-info a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Light Mode - Purple links, darker purple hover */
+html:not([data-theme='dark']) {
+  .post-content a,
+  article a,
+  main a,
+  .page-content a,
+  p a {
+    color: #7c3aed !important;
+    text-decoration: none !important;
+    
+    &:hover {
+      color: #6b21a8 !important;
+    }
+  }
+
+  .navbar a,
+  .navbar-nav a,
+  nav a,
+  header a,
+  .navbar-brand,
+  .nav-link {
+    color: var(--global-text-color) !important;
+    text-decoration: none !important;
+    
+    &:hover {
+      color: #7c3aed !important;
+    }
+  }
+
+  .news .news-toggle {
+    color: var(--global-text-color) !important;
+    
+    &:hover {
+      color: #7c3aed !important;
+    }
+  }
+}
+
+/* Dark Mode - Gold links, gold hover */
+html[data-theme='dark'] {
+  --global-theme-color: #fbbf24 !important;
+  --global-hover-color: #fbbf24 !important;
+  --global-bg-color: #1a1a1a !important;
+  background-color: #1a1a1a !important;
+  
+  .post-content a,
+  article a,
+  main a,
+  .page-content a,
+  p a {
+    color: #fbbf24 !important;
+    text-decoration: none !important;
+    
+    &:hover {
+      color: #fcd34d !important;
+    }
+  }
+
+  .navbar a,
+  .navbar-nav a,
+  nav a,
+  header a,
+  .navbar-brand,
+  .nav-link {
+    color: var(--global-text-color) !important;
+    text-decoration: none !important;
+    
+    &:hover {
+      color: #fbbf24 !important;
+    }
+  }
+
+  .news .news-toggle {
+    color: var(--global-text-color) !important;
+    
+    &:hover {
+      color: #fbbf24 !important;
+    }
+  }
+
+  .news-date,
+  .news .news-date,
+  table .news-date {
+    color: #f3f4f6 !important;
+    opacity: 1 !important;
+  }
+
+  .social a,
+  .contact-icons a {
+    i, i::before {
+      color: var(--global-text-color) !important;
+    }
+    
+    &:hover i,
+    &:hover i::before {
+      color: #fbbf24 !important;
+    }
+  }
+
+  .cv .year {
+    background-color: #2a2a2a !important;
+    color: var(--global-text-color) !important;
+  }
+}
+
+/* News styling */
+.news {
+  .news-row {
+    vertical-align: top;
+  }
+
+  .news-date {
+    vertical-align: top !important;
+    padding-top: 0.35rem !important;
+    padding-right: 1rem !important;
+    white-space: nowrap;
+  }
+
+  .news-content-cell {
+    padding: 0 !important;
+    vertical-align: top !important;
+  }
+
+  .news-item {
+    position: relative;
+  }
+
+  .news-toggle {
+    text-decoration: none !important;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+    
+    .news-icon {
+      color: inherit;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  .news-preview-wrapper {
+    position: relative;
+    max-height: 3em;
+    overflow: hidden;
+    line-height: 1.5em;
+    margin-bottom: 0.25rem;
+  }
+
+  .news-preview-text {
+    display: block;
+  }
+
+  .news-fade {
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--global-bg-color) 100%);
+    pointer-events: none;
+  }
+
+  .news-icon {
+    font-size: 0.75em;
+  }
+
+  .news-toggle[aria-expanded="true"] .news-icon {
+    transform: rotate(180deg);
+  }
+
+  .news-full-content {
+    color: var(--global-text-color);
+  }
+
+  html[data-theme='dark'] & {
+    .news-fade {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #1a1a1a 100%);
+    }
+  }
+}

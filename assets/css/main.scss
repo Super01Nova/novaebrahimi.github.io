@@ -8,6 +8,7 @@ $max-content-width: {{ site.max_width }};
 
 @import
   "variables",
+  "custom",
   "themes",
   "layout",
   "base",
@@ -23,3 +24,19 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+/* Custom link colors */
+html:not([data-theme='dark']) a {
+  color: #6b21a8 !important;
+}
+
+html:not([data-theme='dark']) a:hover {
+  color: #7c3aed !important;
+}
+
+html[data-theme='dark'] a {
+  color: #fbbf24 !important;
+}
+
+html[data-theme='dark'] a:hover {
+  color: #fcd34d !important;
+}
