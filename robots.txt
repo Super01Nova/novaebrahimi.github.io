@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://novaebrahimi.com/sitemap.xml
