@@ -4,13 +4,12 @@
   {% else %}
     {% assign news_size = include.limit | default: site.announcements.limit | default: 5 %}
   {% endif %}
-  
+
   {% if site.announcements.scrollable %}
     {% assign news_limit_scroll = site.announcements.scrollable_limit | default: 5 %}
   {% endif %}
-  
-  {% assign news = site.news | reverse %}
 
+  {% assign news = site.news | reverse %}
   {% if news.size == 0 %}
     <p>No news so far...</p>
   {% else %}
@@ -24,7 +23,7 @@
             <td class="news-content-cell">
               {% if item.inline %}
                 <div class="news-item">
-                  <div class="news-toggle" data-bs-toggle="collapse" data-bs-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
+                  <div class="news-toggle" data-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
                     <div class="news-preview-wrapper">
                       <div class="news-preview-text">{{ item.content | strip_html }}</div>
                       <div class="news-fade"></div>
@@ -47,42 +46,56 @@
     </div>
   {% endif %}
 </div>
-
 <script>
 (function() {
   function initNewsCollapse() {
     var toggles = document.querySelectorAll('.news-toggle');
-    
+    console.log('Found', toggles.length, 'news toggles');
+
     toggles.forEach(function(toggle) {
       toggle.addEventListener('click', function(e) {
         e.preventDefault();
-        
-        var targetId = this.getAttribute('data-bs-target');
+        console.log('=== Toggle clicked ===');
+
+        var targetId = this.getAttribute('data-target');
         var target = document.querySelector(targetId);
         var icon = this.querySelector('.news-icon');
         var previewWrapper = this.querySelector('.news-preview-wrapper');
+
+        console.log('Target ID:', targetId);
+        console.log('Target element:', target);
         
         if (target) {
-          if (target.classList.contains('show')) {
-            // Collapse
+          console.log('Current display:', target.style.display);
+          
+          if (target.style.display === 'block') {
+            console.log('→ COLLAPSING');
             target.classList.remove('show');
-            target.style.display = 'none';
-            if (previewWrapper) previewWrapper.style.display = 'block';
+            target.style.setProperty('display', 'none', 'important');
+            if (previewWrapper) {
+              previewWrapper.style.display = 'block';
+              console.log('  Preview wrapper shown');
+            }
             if (icon) icon.style.transform = 'rotate(0deg)';
             this.setAttribute('aria-expanded', 'false');
           } else {
-            // Expand
+            console.log('→ EXPANDING');
             target.classList.add('show');
-            target.style.display = 'block';
-            if (previewWrapper) previewWrapper.style.display = 'none';
+            target.style.setProperty('display', 'block', 'important');
+            if (previewWrapper) {
+              previewWrapper.style.display = 'none';
+              console.log('  Preview wrapper hidden');
+            }
             if (icon) icon.style.transform = 'rotate(180deg)';
             this.setAttribute('aria-expanded', 'true');
           }
+        } else {
+          console.log('ERROR: Target not found!');
         }
       });
     });
   }
-  
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initNewsCollapse);
   } else {
