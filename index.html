@@ -329,11 +329,10 @@ I bridge UX research methodologies with architectural spatial design principles 
       </h2>
       <div class="news">
   
-  
-  
-  
+
   
 
+  
   
     <div class="table-responsive ">
       <table class="table table-sm table-borderless">
@@ -345,7 +344,7 @@ I bridge UX research methodologies with architectural spatial design principles 
             <td class="news-content-cell">
               
                 <div class="news-item">
-                  <div class="news-toggle" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                  <div class="news-toggle" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
                     <div class="news-preview-wrapper">
                       <div class="news-preview-text">I am attending the IEEE Frontiers in Education Conference 2025 in Nashville, Tennessee, where I will present a paper on effective teaching strategies in virtual worlds for engineering and computing education.
 This research is part of my ongoing work on design patterns aimed at enhancing learning experiences in virtual worlds. I look forward to engaging with educational innovation research and reconnecting with scholars from last year’s conference.
@@ -373,7 +372,7 @@ This research is part of my ongoing work on design patterns aimed at enhancing l
             <td class="news-content-cell">
               
                 <div class="news-item">
-                  <div class="news-toggle" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                  <div class="news-toggle" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                     <div class="news-preview-wrapper">
                       <div class="news-preview-text">I am attending Democon 2025 in Boca Raton, Florida, where I will present three research papers examining qualitative comparative studies of educational practices in virtual worlds and video conferencing platforms.
 
@@ -405,7 +404,7 @@ I am honored to be one of only two students selected to receive travel funding f
             <td class="news-content-cell">
               
                 <div class="news-item">
-                  <div class="news-toggle" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                  <div class="news-toggle" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
                     <div class="news-preview-wrapper">
                       <div class="news-preview-text">Our paper has been published in the Virtual Worlds Journal. I am honored that my work introducing the Socio-Spatial Embodiment Model for conceptualizing learning in virtual worlds is featured on the front page of the journal.
 </div>
@@ -426,42 +425,56 @@ I am honored to be one of only two students selected to receive travel funding f
     </div>
   
 </div>
-
 <script>
 (function() {
   function initNewsCollapse() {
     var toggles = document.querySelectorAll('.news-toggle');
-    
+    console.log('Found', toggles.length, 'news toggles');
+
     toggles.forEach(function(toggle) {
       toggle.addEventListener('click', function(e) {
         e.preventDefault();
-        
-        var targetId = this.getAttribute('data-bs-target');
+        console.log('=== Toggle clicked ===');
+
+        var targetId = this.getAttribute('data-target');
         var target = document.querySelector(targetId);
         var icon = this.querySelector('.news-icon');
         var previewWrapper = this.querySelector('.news-preview-wrapper');
+
+        console.log('Target ID:', targetId);
+        console.log('Target element:', target);
         
         if (target) {
-          if (target.classList.contains('show')) {
-            // Collapse
+          console.log('Current display:', target.style.display);
+          
+          if (target.style.display === 'block') {
+            console.log('→ COLLAPSING');
             target.classList.remove('show');
-            target.style.display = 'none';
-            if (previewWrapper) previewWrapper.style.display = 'block';
+            target.style.setProperty('display', 'none', 'important');
+            if (previewWrapper) {
+              previewWrapper.style.display = 'block';
+              console.log('  Preview wrapper shown');
+            }
             if (icon) icon.style.transform = 'rotate(0deg)';
             this.setAttribute('aria-expanded', 'false');
           } else {
-            // Expand
+            console.log('→ EXPANDING');
             target.classList.add('show');
-            target.style.display = 'block';
-            if (previewWrapper) previewWrapper.style.display = 'none';
+            target.style.setProperty('display', 'block', 'important');
+            if (previewWrapper) {
+              previewWrapper.style.display = 'none';
+              console.log('  Preview wrapper hidden');
+            }
             if (icon) icon.style.transform = 'rotate(180deg)';
             this.setAttribute('aria-expanded', 'true');
           }
+        } else {
+          console.log('ERROR: Target not found!');
         }
       });
     });
   }
-  
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initNewsCollapse);
   } else {
