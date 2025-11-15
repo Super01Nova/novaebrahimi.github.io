@@ -9,4 +9,7 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache'
   gem 'jekyll-seo-tag'
   gem 'jekyll-github-metadata'
+  gem 'jekyll-paginate'
+  gem 'jekyll-gist'
+  gem 'jekyll-coffeescript'
 end
