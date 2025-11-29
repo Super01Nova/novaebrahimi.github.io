@@ -3,47 +3,65 @@
   contents:
     - title: PhD in Computing and Information Systems
       institution: University of North Carolina at Charlotte \n Human-Centered Computing Lab
-      year: 2021 - 2026
+      #year: 2021 - 2026
       description:
-        - "Dissertation : Design Patterns for Virtual Worlds"
+        - "Dissertation: Design Patterns for Virtual Worlds"
 
         
     - title: Master of Science in Information Technology
       institution: University of North Carolina at Charlotte
-      year: 2021
+      #year: 2021
       
     - title: Master of Science in Computational Design
       institution: University of North Carolina at Charlotte
-      year: 2021
+      #year: 2021
       
     - title: Master of Science in Architectural Engineering
       institution: Rouzbahan Institute of Higher Education
-      year: 2013
+      #year: 2013
 
     - title: Bachelor of Science in Architectural Engineering
       institution: Tabriz Art University
-      year: 2010
+      #year: 2010
 
-- title: Research Experience
-  type: time_table
+
+- title: Technical Skills
+  type: list
   contents:
-    - title: Graduate Research Assistant
-      institution: Human-Centered Computing Lab, UNC Charlotte
-      year: 2019 - Present
-      description:
-        - Conducted qualitative research with 14 educators and 9 student focus groups
-        - Developed Socio-Spatial Embodiment (SSE) Model for virtual learning environments
-        - Published 8 papers (7 as first author) in HCI and education technology venues
-        
-- title: Teaching Experience
+  
+    - <u>Programming:</u> Python
+    - <u>Research Methods </u>: Qualitative analysis: psychometric scale development, usability testing, Testing, Focus Groups Studies, In-depth Semi-Structured interviews, Structured interviews, Ethnography, Tree Testing, Concept/prototype Testing, Thematic Analysis, Content Analysis
+    - <u>Research Methods </u>: Quantitative analysis: Survey Design & research, A/B Testing, Statistical Analysis (Descriptive & Inferential)
+    - <u>Prototyping:</u> Rapid Prototyping, Wireframes, Paper prototyping, Low/Hight-Fidelity Prototyping
+    - <u>Tools:</u> Qualtrics, Figma, Balsamiq, FigJam, Adobe Photoshop, Illustrator 
+    - <u>3D Modeling:</u> Rhino, Unity
+ 
+
+- title: DESIGN RESEARCH & TEACHING EXPERIENCE
   type: time_table
   contents:
     - title: Teaching Assistant
-      institution: UNC Charlotte
-      year: 2019 - Present
+      institution: Human-Centered Computing Lab, UNC Charlotte
+      #year: 2021 - Present
       description:
-        - UX Research courses
-        - Provided feedback on usability testing and qualitative research methods
+        - Developed the Socio-Spatial Embodiment Model for virtual learning environments through mixed-methods research, published across 5 venues (FIE 2022, 2024, 2025; ACM ISS 2023; Virtual Worlds Journal)
+        - Conducted comprehensive qualitative research including in-depth educator interviews and student focus groups, to identify design strategies and interface patterns in virtual world education
+        - Designed a psychometric instrument to measure integrated student experiences of place, presence, and community in virtual learning environments
+        - Developed computational taxonomy of virtual world interface patterns using computer vision, machine learning clustering, and systematic pattern analysis to inform educational design decisions
+        - Applied interdisciplinary expertise combining user experience research, human-computer interaction, architectural design principles, and educational technology to solve complex interface usability challenges in virtual environments
+        - Developed systematic design pattern identification for desktop virtual worlds, transitioning from qualitative insights to computational analysis for scalable educational technology improvements
+        - Led teaching assistant teams for HCI, Rapid Prototyping, and Interaction Design Studio courses while conducting doctoral research on virtual environment design
+
+        
+- title: Research Assistant
+  type: time_table
+  contents:
+    - title: Teaching Assistant
+      institution: Integrated Design Research lab (UNCC) - Charlotte, NC
+      #year: Jan.2021 – May 2021
+      description:
+        - Researched and designed spatial typologies along human and machine perceptions by prototyping and programming a scanner robot using Raspberry Pi, proximity sensors, and lidar
+        
 
 - title: Publications
   type: list
@@ -64,9 +82,3 @@
         - Desktop virtual worlds vs video conferencing
         - Design patterns for virtual learning spaces
 
-- title: Technical Skills
-  type: list
-  contents:
-    - <u>3D Modeling:</u> Rhino, Unity
-    - <u>Programming:</u> Python, JavaScript
-    - <u>Research Methods:</u> Qualitative analysis, psychometric scale development, usability testing
