@@ -1,43 +1,63 @@
+- title: Research Interests
+  type: list
+  contents:
+      - <i class="fas fa-lightbulb icon-research"></i> Design pattern taxonomies for virtual learning environments, AI co-designer systems for educational technology, human-centered spatial computing, immersive interface design, educational equity and access through technology, perceptual and neurocognitive patterns in virtual environments, cross-reality design principles, mixed methods research combining qualitative and computational approaches, embodied interaction in learning contexts, human-in-the-loop AI systems
+
 - title: Education
   type: time_table
   contents:
     - title: PhD in Computing and Information Systems
-      institution: University of North Carolina at Charlotte \n Human-Centered Computing Lab
+      institution: University of North Carolina at Charlotte, NC
+        <br> Human-Centered Computing Lab
       #year: 2021 - 2026
       description:
-        - "Dissertation: Design Patterns for Virtual Worlds"
+        - "Dissertation: Design Patterns for Virtual World Learning Environments"
 
         
     - title: Master of Science in Information Technology
-      institution: University of North Carolina at Charlotte
+      institution: University of North Carolina at Charlotte, NC
       #year: 2021
-      
-    - title: Master of Science in Computational Design
-      institution: University of North Carolina at Charlotte
+      description:
+        - "Coursework: Human-Centered Design, Web Application Design, Augmented Reality User Experience, IT Project Management
+        <br> Master Thesis: Revealing the Hidden Layers in an Environment: A Case Study of the Visualization of the Coronavirus Contamination and Navigation in a Hospital (an Augmented Reality Project)"
+
+
+    - title: Master of Science in Design Computation
+      institution: University of North Carolina at Charlotte, NC
       #year: 2021
-      
+      description:
+        - "Coursework: Connective Environments Design, Computational Design Theory, Digital Fabrication"
+
     - title: Master of Science in Architectural Engineering
       institution: Rouzbahan Institute of Higher Education
       #year: 2013
+      description:
+        - "Coursework: Design Theory, Urban Design, Parametric Design"
+
 
     - title: Bachelor of Science in Architectural Engineering
       institution: Tabriz Art University
       #year: 2010
+      description:
+        - "Coursework: Architectural design, Prototyping, Design theory, 3D Modeling"
 
 
 - title: Technical Skills
-  type: list
+  type: time_table
   contents:
-  
-    - <u>Programming:</u> Python
-    - <u>Research Methods </u>: Qualitative analysis: psychometric scale development, usability testing, Testing, Focus Groups Studies, In-depth Semi-Structured interviews, Structured interviews, Ethnography, Tree Testing, Concept/prototype Testing, Thematic Analysis, Content Analysis
-    - <u>Research Methods </u>: Quantitative analysis: Survey Design & research, A/B Testing, Statistical Analysis (Descriptive & Inferential)
-    - <u>Prototyping:</u> Rapid Prototyping, Wireframes, Paper prototyping, Low/Hight-Fidelity Prototyping
-    - <u>Tools:</u> Qualtrics, Figma, Balsamiq, FigJam, Adobe Photoshop, Illustrator 
-    - <u>3D Modeling:</u> Rhino, Unity
- 
+    - title: <i class="fas fa-code icon-research"></i> Programming & AI
+      description:
+      - '<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;"><div><strong>Programming:</strong><ul><li>Python</li><li>C#</li><li>JavaScript</li></ul></div><div><strong>Artificial Intelligence:</strong><ul><li>Vision-Language Models (VLM)</li><li>Multi-modal Analysis</li><li>Generative AI Integration</li></ul></div></div>'
+    - title: "<i class='fas fa-flask icon-research'></i> Research Methods & Analysis: Mixed Methods"
+      description:
+        - "<strong><i class='fas fa-chart-bar'></i> Qualitative Research:</strong> Usability Testing, Focus Groups Studies, In-depth Semi-Structured Interviews, Structured Interviews, Ethnography, Tree Testing, Concept/prototype Testing, Thematic Analysis, Content Analysis"
+        - "<strong><i class='fas fa-chart-line'></i> Quantitative methods:</strong> Survey Design & research, A/B Testing, Statistical Analysis (Descriptive & Inferential)"
+    - title: <i class="fas fa-tools icon-research"></i> Prototyping & Tools
+      description:
+        - "<div style='display: grid; grid-template-columns: 1fr 1fr; gap: 40px;'><div><strong>Prototyping:</strong><ul style='columns: 2;'><li>Rapid Prototyping</li><li>Wireframes</li><li>Paper prototyping</li><li>Low-Fidelity Prototyping</li><li>High-Fidelity Prototyping</li></ul></div><div><strong>Tools:</strong><ul style='columns: 3;'><li>Figma</li><li>Balsamiq</li><li>FigJam</li><li>Qualtrics</li><li>Airtable</li><li>Miro</li><li>Adobe Photoshop</li><li>Rhinoceros 3D</li><li>Illustrator</li><li>Unity</li><li>NVivo</li><li>SPSS</li></ul></div></div>"
 
-- title: DESIGN RESEARCH & TEACHING EXPERIENCE
+
+- title: Design Research & Teaching Experience
   type: time_table
   contents:
     - title: Teaching Assistant
@@ -51,17 +71,30 @@
         - Applied interdisciplinary expertise combining user experience research, human-computer interaction, architectural design principles, and educational technology to solve complex interface usability challenges in virtual environments
         - Developed systematic design pattern identification for desktop virtual worlds, transitioning from qualitative insights to computational analysis for scalable educational technology improvements
         - Led teaching assistant teams for HCI, Rapid Prototyping, and Interaction Design Studio courses while conducting doctoral research on virtual environment design
-
-        
-- title: Research Assistant
-  type: time_table
-  contents:
-    - title: Teaching Assistant
-      institution: Integrated Design Research lab (UNCC) - Charlotte, NC
+    - title: Research Assistant
+      institution: Integrated Design Research lab, UNC Charlotte, NC
       #year: Jan.2021 – May 2021
       description:
         - Researched and designed spatial typologies along human and machine perceptions by prototyping and programming a scanner robot using Raspberry Pi, proximity sensors, and lidar
-        
+    - title: Research Assistant
+      institution: Studio Dickey Lab, UNC Charlotte, NC
+      #year: Jan.2021 – May 2021
+      description:
+        - Researched and designed origami acoustic structures by designing simulations in Rhinoceros 3D using the Grasshopper, and Pachyderm Acoustic plugins
+        - Designed and prototyped origami structures using Rhinoceros 3D, Grasshopper
+        - Presented and animated design patterns using Grasshopper, and Photoshop, with a final presentation using InDesign
+    - title: Research Assistant
+      institution: Urban Synergetic Lab, UNC Charlotte, NC
+      #year: Jan.2021 – May 2021
+      description:
+        - Researched mechanical computer shape grammar using the Logic Gate Simulator
+    - title: Research Assistant
+      institution: High-Performance Architecture Lab, Tarbiat Modarres University, Tehran, Iran
+      #year: Jan.2021 – May 2021
+      description:
+        - Researched and published papers on shape grammar
+
+
 
 - title: Publications
   type: list
@@ -70,15 +103,4 @@
     - 7 first-author papers on socio-spatial embodiment and virtual world design
     - See <a href="/publications/">publications page</a> for full list
 
-- title: Research Interests
-  type: nested_list
-  contents:
-    - title: Human-Computer Interaction
-      items:
-        - Virtual world design for education
-        - Socio-spatial embodiment in learning environments
-    - title: Educational Technology
-      items:
-        - Desktop virtual worlds vs video conferencing
-        - Design patterns for virtual learning spaces
 

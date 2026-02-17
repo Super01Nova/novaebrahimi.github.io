@@ -32,6 +32,14 @@ a.btncv {
   white-space: nowrap;
 }
 
+/*****************************
+ * Custom bullet point sizing
+ *****************************/
+
+ul li {
+  font-size: 0.5rem;
+}
+
 a.btncv:hover {
   color: var(--global-theme-color) !important;
   border-color: var(--global-theme-color) !important;
@@ -104,6 +112,37 @@ div.list-groups {
   justify-content: flex-start;
   flex-direction: row;
   align-content: center;
+}
+
+/*****************************
+ * Subheader sizing
+ *****************************/
+
+/* Main section titles */
+.cv > div > h2 {
+  font-size: 1.5rem;  /* Keep main titles large */
+}
+
+/* Nested subheaders (Prototyping:, Tools:, etc.) */
+.cv .nested_list h3,
+.cv .nested_list h4 {
+  font-size: 1rem;  /* Make subheaders smaller */
+  font-weight: 600;
+}
+
+/*****************************
+ * Research interests icon colors
+ *****************************/
+
+i.icon-research {
+  color: var(--global-theme-color);  /* Purple in light mode */
+  font-size: 0.9rem;
+  margin-right: 0.3rem;
+}
+
+/* Yellow/gold in dark mode */
+html[data-theme='dark'] i.icon-research {
+  color: #ffd700;  /* Gold color */
 }
 
 div.list-group {
