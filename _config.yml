@@ -267,6 +267,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 scholar:
   last_name: Ebrahimi
   first_name: [Nova]
+  email: nova@novaebrahimi.com
   
   style: apa
   locale: en
