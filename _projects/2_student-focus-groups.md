@@ -2,7 +2,7 @@
 layout: page
 title: "Virtual Worlds or Video Calls? It Depends on the Activity"
 description: Comparative focus groups and thematic analysis that turned student experience into platform guidance
-img: assets/img/case-studies/p2-thumb.jpg
+img: assets/img/case-studies/p2-thumb.png
 importance: 2
 category: UX research
 toc:
