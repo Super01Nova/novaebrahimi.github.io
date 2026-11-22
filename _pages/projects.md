@@ -6,7 +6,7 @@ description: UX research case studies on learning in virtual worlds.
 nav: true
 nav_order: 2
 display_categories: [UX research]
-horizontal: false
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
