@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Same Actions, Different Signals: Patterns Across Seven Virtual Worlds"
-description: Comparative interface analysis using a vision-language model, clustering, and expert review
-img: assets/img/case-studies/p3-thumb.jpg
+description: AI-assisted comparative interface analysis using a vision-language model, clustering, and expert review
+img: assets/img/case-studies/p3-thumb.png
 importance: 3
 category: UX research
 toc:

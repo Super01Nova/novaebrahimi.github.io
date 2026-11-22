@@ -2,7 +2,7 @@
 layout: page
 title: "Why Copied Classrooms Sit Empty: Lessons from Expert Educators"
 description: Expert interviews, thematic synthesis, and an experience framework for virtual learning spaces
-img: assets/img/case-studies/p1-thumb.jpg
+img: assets/img/case-studies/p1-thumb.png
 importance: 1
 category: UX research
 toc:
@@ -22,7 +22,7 @@ toc:
 
 Virtual worlds such as Second Life give remote learners something a video call cannot: a shared place to walk into, build in, and meet others. Yet most schools still default to video conferencing. I interviewed experienced educators who had taught in virtual worlds for years to learn which design decisions actually make these spaces work, and turned what they told me into a framework that guided the rest of my research program.
 
-{% include figure.liquid loading="eager" path="assets/img/case-studies/p1-hero.jpg" title="Virtual classroom in Second Life" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/case-studies/p1-hero.png" title="Virtual classroom in Second Life" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
   Open classroom in Second Life where an educator replaced chairs with floor cushions to cut rendering load and simplify sitting.
 </div>
@@ -78,7 +78,7 @@ Community formed around regular live events, not round-the-clock access. Branded
 
 **Design implication:** support recurring events and institutional identity at the entry point. Always-open spaces alone do not bring people together.
 
-{% include figure.liquid path="assets/img/case-studies/p1-group-zones.jpg" title="Group work zones" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/case-studies/p1-group-zones.png" title="Group work zones" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
   Platforms mark private group zones with visible boundaries, such as circles around tables in Virbela and rugs in Gather.Town.
 </div>
@@ -110,15 +110,15 @@ I coded alone to keep interpretation consistent across a large, context-heavy da
 
 - **Interaction Design Strategies for Socio-Spatial Embodiment in Virtual World Learning.** A. N. Ebrahimi and H. Ramaprasad. *Virtual Worlds* (MDPI), 2025. Editor's Choice Article.<br>
   <a href="{{ '/assets/pdf/ebrahimi2025interaction.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-  <a href="https://doi.org/10.3390/virtualworlds4030030" class="btn btn-sm z-depth-0" role="button">Online</a>
+  <a href="https://doi.org/10.3390/virtualworlds4030030" class="btn btn-sm z-depth-0" Replace: role="button" target="_blank" rel="noopener noreferrer">Online</a>
 - **Successful Teaching Strategies in Virtual World Education for Engineering and Computing.** A. N. Ebrahimi, M. L. Maher, and H. Ramaprasad. *IEEE Frontiers in Education Conference (FIE)*, 2025.<br>
   <a href="{{ '/assets/pdf/ebrahimi2025teaching.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-  <a href="https://doi.org/10.1109/FIE63693.2025.11328593" class="btn btn-sm z-depth-0" role="button">Online</a>
+  <a href="https://doi.org/10.1109/FIE63693.2025.11328593" class="btn btn-sm z-depth-0" Replace: role="button" target="_blank" rel="noopener noreferrer">Online</a>
 - **Successful Practices for Avatars in Virtual World Learning: Perspectives from Experienced Educators.** A. N. Ebrahimi and H. Ramaprasad. *IEEE Digital Education and MOOCS Conference (DEMOcon)*, 2025.<br>
   <a href="{{ '/assets/pdf/ebrahimi2025avatars.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-  <a href="https://doi.org/10.1109/DEMOcon65705.2025.11282660" class="btn btn-sm z-depth-0" role="button">Online</a>
+  <a href="https://doi.org/10.1109/DEMOcon65705.2025.11282660" class="btn btn-sm z-depth-0" Replace: role="button" target="_blank" rel="noopener noreferrer">Online</a>
 - **Advantages of Virtual Worlds versus Video Conferencing Platforms for Online Education: A Comparative Study.** A. N. Ebrahimi and H. Ramaprasad. *IEEE Digital Education and MOOCS Conference (DEMOcon)*, 2025.<br>
   <a href="{{ '/assets/pdf/ebrahimi2025advantages.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-  <a href="https://doi.org/10.1109/DEMOcon65705.2025.11282851" class="btn btn-sm z-depth-0" role="button">Online</a>
+  <a href="https://doi.org/10.1109/DEMOcon65705.2025.11282851" class="btn btn-sm z-depth-0" Replace: role="button" target="_blank" rel="noopener noreferrer">Online</a>
 
 **Related case studies:** [Virtual Worlds or Video Calls? It Depends on the Activity]({{ '/projects/2_student-focus-groups/' | relative_url }}) · [Same Actions, Different Signals: Patterns Across Seven Virtual Worlds]({{ '/projects/3_interface-patterns/' | relative_url }})
