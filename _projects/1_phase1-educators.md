@@ -1,13 +1,15 @@
 ---
 layout: page
-title: What Expert Users Know About Virtual Classrooms
-description: Expert interviews that produced an experience framework for learning in virtual worlds
+title: "Phase 1: What Expert Educators Say About Virtual World Learning Environments"
+description: In-depth interviews with experienced educators that produced an experience framework for learning in virtual worlds
 img: assets/img/case-studies/p1-thumb.jpg
 importance: 1
 category: UX research
 toc:
   sidebar: left
 ---
+
+> **Phase 1 of 3** in a research program on designing virtual worlds for learning. Each phase looks at the same environments from a different position: [the educators who design them]({{ '/projects/1_phase1-educators/' | relative_url }}), [the students who learn in them]({{ '/projects/2_phase2-students/' | relative_url }}), and [the platform interfaces that mediate both]({{ '/projects/3_phase3-interfaces/' | relative_url }}).
 
 | | |
 |---|---|
@@ -19,9 +21,9 @@ toc:
 
 ## Overview
 
-Virtual worlds such as Second Life give remote learners something a video call cannot: a shared place to walk into, build in, and meet others. Yet most schools still default to video conferencing. I interviewed expert users who had taught in virtual worlds for years to learn which design decisions actually make these spaces work, and turned what they told me into a framework that guided the rest of my research program.
+Virtual worlds such as Second Life give remote learners something a video call cannot: a shared place to walk into, build in, and meet others. Yet most schools still default to video conferencing. I interviewed experienced educators who had taught in virtual worlds for years to learn which design decisions actually make these spaces work, and turned what they told me into a framework that guided the rest of my research program.
 
-{% include figure.liquid loading="eager" path="assets/img/case-studies/p1-hero.jpg" title="Virtual classroom in Second Life" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/case-studies/p1-hero.png" title="Virtual classroom in Second Life" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
   Open classroom in Second Life where an educator replaced chairs with floor cushions to cut rendering load and simplify sitting.
 </div>
@@ -37,7 +39,7 @@ Most virtual worlds are not built for teaching, so educators adapt them on their
 
 ## Approach
 
-**Recruiting expert users.** I partnered with the Virtual World Education Consortium, a long-running community of educators in Second Life, and recruited 14 participants. I targeted experts on purpose, since newcomers tend to copy physical classrooms, while experienced users have already discarded what fails. Half of them had more than 15 years of experience.
+**Recruiting expert educators.** I partnered with the Virtual World Education Consortium, a long-running community of educators in Second Life, and recruited 14 participants. I targeted experts on purpose, since newcomers tend to copy physical classrooms, while experienced educators have already discarded what fails. Half of them had more than 15 years of experience.
 
 **Discussion guide.** I wrote a 37-question guide covering teaching context, platform comparison, interface use, real-world design choices, and the experience of presence, place, and community. I piloted it with two experts through cognitive walkthroughs and revised unclear questions before fieldwork.
 
@@ -97,12 +99,27 @@ The strongest strategies never addressed one need at a time. A seating layout, f
 
 **Deliverables and recognition**
 
-- The SSE Model, used as the analysis lens for my next two studies
+- The SSE Model, used as the analysis lens for Phases 2 and 3
 - 56 design opportunities (52 pattern candidates plus 4 improvement ideas drawn from the comparison with video calls)
 - Four papers; the framework paper in *Virtual Worlds* (MDPI) was named an Editor's Choice Article
 
 ## Reflection
 
-I coded alone to keep interpretation consistent across a large, context-heavy dataset, and used regular peer debriefs to check my reading. The sample covered expert educators only, so I could not speak for learners. That gap shaped my next study, where I went directly to students.
+I coded alone to keep interpretation consistent across a large, context-heavy dataset, and used regular peer debriefs to check my reading. The sample covered expert educators only, so I could not speak for learners. That gap shaped Phase 2, where I went directly to students.
 
-**Next:** [Virtual Worlds vs. Video Calls: Comparative Student Research]({{ '/projects/2_student-focus-groups/' | relative_url }})
+## Publications
+
+- **Interaction Design Strategies for Socio-Spatial Embodiment in Virtual World Learning.** A. N. Ebrahimi and H. Ramaprasad. *Virtual Worlds* (MDPI), 2025. Editor's Choice Article.<br>
+  <a href="{{ '/assets/pdf/ebrahimi2025interaction.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+  <a href="https://doi.org/10.3390/virtualworlds4030030" class="btn btn-sm z-depth-0" role="button">Online</a>
+- **Successful Teaching Strategies in Virtual World Education for Engineering and Computing.** A. N. Ebrahimi, M. L. Maher, and H. Ramaprasad. *IEEE Frontiers in Education Conference (FIE)*, 2025.<br>
+  <a href="{{ '/assets/pdf/ebrahimi2025teaching.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+  <a href="https://doi.org/10.1109/FIE63693.2025.11328593" class="btn btn-sm z-depth-0" role="button">Online</a>
+- **Successful Practices for Avatars in Virtual World Learning: Perspectives from Experienced Educators.** A. N. Ebrahimi and H. Ramaprasad. *IEEE Digital Education and MOOCS Conference (DEMOcon)*, 2025.<br>
+  <a href="{{ '/assets/pdf/ebrahimi2025avatars.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+  <a href="https://doi.org/10.1109/DEMOcon65705.2025.11282660" class="btn btn-sm z-depth-0" role="button">Online</a>
+- **Advantages of Virtual Worlds versus Video Conferencing Platforms for Online Education: A Comparative Study.** A. N. Ebrahimi and H. Ramaprasad. *IEEE Digital Education and MOOCS Conference (DEMOcon)*, 2025.<br>
+  <a href="{{ '/assets/pdf/ebrahimi2025advantages.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+  <a href="https://doi.org/10.1109/DEMOcon65705.2025.11282851" class="btn btn-sm z-depth-0" role="button">Online</a>
+
+**Next:** [Phase 2: What Students Say About Virtual World Learning Environments]({{ '/projects/2_phase2-students/' | relative_url }})

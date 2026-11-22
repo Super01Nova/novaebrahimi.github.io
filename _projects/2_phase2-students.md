@@ -1,13 +1,15 @@
 ---
 layout: page
-title: Virtual Worlds vs. Video Calls
-description: Comparative student research on when each platform helps learning
+title: "Phase 2: What Students Say About Virtual World Learning Environments"
+description: Comparative focus groups with students who learned in both virtual worlds and video calls
 img: assets/img/case-studies/p2-thumb.jpg
 importance: 2
 category: UX research
 toc:
   sidebar: left
 ---
+
+> **Phase 2 of 3** in a research program on designing virtual worlds for learning. Each phase looks at the same environments from a different position: [the educators who design them]({{ '/projects/1_phase1-educators/' | relative_url }}), [the students who learn in them]({{ '/projects/2_phase2-students/' | relative_url }}), and [the platform interfaces that mediate both]({{ '/projects/3_phase3-interfaces/' | relative_url }}).
 
 | | |
 |---|---|
@@ -19,7 +21,7 @@ toc:
 
 ## Overview
 
-After the pandemic, video conferencing became the default for online classes, while virtual worlds such as Gather.Town, Virbela, Second Life, and Minecraft stayed on the margins. My earlier interviews captured the expert view. This study asked learners who had used both kinds of platform to compare them head to head, so I could find where each one helps and where it gets in the way.
+After the pandemic, video conferencing became the default for online classes, while virtual worlds such as Gather.Town, Virbela, Second Life, and Minecraft stayed on the margins. Phase 1 captured the educators' view. This phase asked learners who had used both kinds of platform to compare them head to head, so I could find where each one helps and where it gets in the way.
 
 {% include figure.liquid loading="eager" path="assets/img/case-studies/p2-hero.jpg" title="Virtual world and video call side by side" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
@@ -40,7 +42,7 @@ Find out how students' learning experiences differ between virtual worlds and vi
 
 **Comparative moderation.** Instead of asking about one platform at a time, I asked students to judge each against the other. Comparison surfaced details neither platform's users would mention on their own, such as how leaving a breakout room actually works.
 
-**Sessions and synthesis.** Sessions ran 70 to 90 minutes on Zoom. I cleaned and de-identified every transcript, then used inductive thematic analysis to let themes come from the students' own accounts. I mapped the resulting themes onto the experience framework from my expert study to see where learners agreed with educators and where they added something new.
+**Sessions and synthesis.** Sessions ran 70 to 90 minutes on Zoom. I cleaned and de-identified every transcript, then used inductive thematic analysis to let themes come from the students' own accounts. I mapped the resulting themes onto the experience framework from Phase 1 to see where students agreed with educators and where they added something new.
 
 ## Key insights
 
@@ -81,7 +83,7 @@ The platforms are complements, not competitors. Each one's strengths cover the o
 ## Outcome
 
 - Platform-by-activity guidance for educators and institutions choosing tools
-- 23 design opportunities, each traced against the expert findings so I could see which needs both groups shared
+- 23 design opportunities, each traced against the Phase 1 findings so I could see which needs both groups shared
 - One published paper
 
 ## Challenges and reflection
@@ -90,4 +92,10 @@ The platforms are complements, not competitors. Each one's strengths cover the o
 
 **Small, focused sample.** Nine students across four platforms gave depth, not breadth. The findings point to directions worth testing with a larger group.
 
-**Next:** [AI-Assisted UI Audit of Seven Virtual World Platforms]({{ '/projects/3_ai-ui-audit/' | relative_url }})
+## Publication
+
+- **Student Experiences in Online Learning Environments: A Comparative Study of Virtual Worlds and Video Conferencing Platforms.** A. N. Ebrahimi and H. Ramaprasad. *IEEE Digital Education and MOOCS Conference (DEMOcon)*, 2025.<br>
+  <a href="{{ '/assets/pdf/ebrahimi2025student.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+  <a href="https://doi.org/10.1109/DEMOcon65705.2025.XXXXXXXX" class="btn btn-sm z-depth-0" role="button">Online</a> <!-- TODO: replace XXXXXXXX with this paper's IEEE Xplore DOI number -->
+
+**Next:** [Phase 3: What Platform Interfaces Show About Virtual World Learning Environments]({{ '/projects/3_phase3-interfaces/' | relative_url }})

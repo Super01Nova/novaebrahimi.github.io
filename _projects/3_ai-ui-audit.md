@@ -2,7 +2,7 @@
 layout: page
 title: AI-Assisted UI Audit of Seven Platforms
 description: Using a vision-language model to find recurring interface patterns across competing products
-img: assets/img/case-studies/p3-thumb.jpg
+img: assets/img/case-studies/p3-thumb.png
 importance: 3
 category: UX research
 toc:
