@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: UX research case studies on learning in virtual worlds.
 nav: true
