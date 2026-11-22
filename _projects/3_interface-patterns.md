@@ -1,36 +1,37 @@
 ---
 layout: page
-title: AI-Assisted UI Audit of Seven Platforms
-description: Using a vision-language model to find recurring interface patterns across competing products
-img: assets/img/case-studies/p3-thumb.png
+title: "Same Actions, Different Signals: Patterns Across Seven Virtual Worlds"
+description: Comparative interface analysis using a vision-language model, clustering, and expert review
+img: assets/img/case-studies/p3-thumb.jpg
 importance: 3
 category: UX research
 toc:
   sidebar: left
 ---
 
+
 | | |
 |---|---|
-| **My role** | Researcher and pipeline engineer (solo): audit design, screen capture, extraction schema, ML pipeline, analysis, pattern review |
+| **My role** | Researcher and pipeline engineer (solo): study design, screen capture, extraction schema, ML pipeline, analysis, pattern review |
 | **Timeline** | 2025 to 2026 |
-| **Methods** | Competitive UI audit, AI-assisted element extraction, clustering with stability testing, expert review |
+| **Methods** | Comparative interface analysis, AI-assisted element extraction, clustering with stability testing, expert review |
 | **Tools** | Python, Qwen2.5-VL-72B, HDBSCAN, SLURM on a university GPU cluster |
-| **Outputs** | 35 interface pattern candidates, a repeatable audit procedure, a 103-pattern catalog combined with my two user studies |
+| **Outputs** | 35 interface pattern candidates, a repeatable analysis procedure, a 103-pattern catalog combined with my user research |
 
 ## Overview
 
-My interviews and focus groups told me what people said about virtual world interfaces. This project looked at what the products actually ship. I audited the interfaces of seven competing platforms, used a vision-language model to inventory every interface element on thousands of screens, and combined clustering with my own review to find the design patterns that recur across products.
+My [educator interviews]({{ '/projects/1_educator-interviews/' | relative_url }}) and [student focus groups]({{ '/projects/2_student-focus-groups/' | relative_url }}) told me what people said about virtual world interfaces. This project looked at what the platforms actually ship. I analyzed the interfaces of seven competing platforms, used a vision-language model to inventory every interface element on thousands of screens, and combined clustering with my own review to find the design patterns that recur across products.
 
-**Platforms audited:** Second Life, Gather.Town, VRChat, Spatial, Virbela, Minecraft Education, Roblox
+**Platforms analyzed:** Second Life, Gather.Town, VRChat, Spatial, Virbela, Minecraft Education, Roblox
 
-{% include figure.liquid loading="eager" path="assets/img/case-studies/p3-hero.png" title="Audit pipeline" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/case-studies/p3-hero.png" title="Analysis pipeline" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
-  The audit pipeline, from screen capture to reviewed pattern candidates.
+  The analysis pipeline, from screen capture to reviewed pattern candidates.
 </div>
 
 ## The problem
 
-Interface pattern libraries cover web and mobile apps, but none describe the layer between a user and a 3D world: the menus, panels, and buttons that let you move your avatar, find people, and act on the place around you. Manual pattern work also has a ceiling, since one person can only review so many screens. I wanted an audit large enough to tell real conventions apart from one company's quirks.
+Interface pattern libraries cover web and mobile apps, but none describe the layer between a user and a 3D world: the menus, panels, and buttons that let you move your avatar, find people, and act on the place around you. Manual pattern work also has a ceiling, since one person can only review so many screens. I wanted an analysis large enough to tell real conventions apart from one company's quirks.
 
 ## Research questions
 
@@ -56,9 +57,9 @@ A density-based clustering method (HDBSCAN) grouped similar element records and 
 
 I checked every stable group against its source screenshots before naming any pattern. The model extracted; I identified.
 
-{% include figure.liquid path="assets/img/case-studies/p3-clusters.png" title="Stable clusters by platform" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/case-studies/p3-evidence-matrix.png" title="Pattern candidates by platform" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
-  Stable groups of interface elements and the platforms each one appears on.
+  Each pattern candidate and the platforms it appears on. Larger markers mean more screenshots show the pattern.
 </div>
 
 ### Engineering challenges
@@ -80,9 +81,9 @@ I checked every stable group against its source screenshots before naming any pa
 ## Outcome
 
 - **35 interface pattern candidates**, 24 of them recurring across more than one platform
-- **Cross-checked against user research:** 6 matched designs that educators or students had already described, 21 gave the interface answer to a need those studies raised, and 8 addressed needs no participant mentioned
-- **A repeatable audit procedure** that draws pattern evidence from a corpus anyone can check, instead of from the examples one designer happens to know
-- **A combined catalog of 103 design patterns** that merges these candidates with those from my expert interviews and student focus groups
+- **Cross-checked against my user research:** 6 matched designs that educators or students had already described, 21 gave the interface answer to a need those studies raised, and 8 addressed needs no participant mentioned
+- **A repeatable analysis procedure** that draws pattern evidence from a corpus anyone can check, instead of from the examples one designer happens to know
+- **A combined catalog of 103 design patterns** that merges these candidates with those from my educator and student studies
 
 ## Reflection
 
@@ -90,4 +91,4 @@ The procedure is strongest when a single screenshot carries the evidence: whethe
 
 Looking further ahead, I see the pattern catalog as the knowledge base for an AI co-design assistant that helps educators build and adjust virtual learning spaces without hiring a designer.
 
-**Start from the beginning:** [What Expert Users Know About Virtual Classrooms]({{ '/projects/1_expert-interviews/' | relative_url }})
+**Related case studies:** [Why Copied Classrooms Sit Empty: Lessons from Expert Educators]({{ '/projects/1_educator-interviews/' | relative_url }}) · [Virtual Worlds or Video Calls? It Depends on the Activity]({{ '/projects/2_student-focus-groups/' | relative_url }})
