@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Projects
+title: Selected Work
 permalink: /projects/
-description: UX research case studies on learning in virtual worlds.
+description: UX research case studies on learning in virtual worlds. My earlier work spans architecture, computational design, and IT.
 nav: true
 nav_order: 2
 display_categories: [UX research]

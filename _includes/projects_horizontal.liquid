@@ -1,34 +1,29 @@
+{% comment %}
+  Overlay project card: the thumbnail fills the whole card, and the title and
+  description sit in a translucent panel on the right side of the image.
+  Replaces al-folio's default horizontal card. Styles live in assets/css/main.scss.
+{% endcomment %}
+{% if project.redirect %}
+  {% assign project_link = project.redirect %}
+{% else %}
+  {% assign project_link = project.url | relative_url %}
+{% endif %}
+
 <div class="col mb-4">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      <div class="row no-gutters">
-        {% if project.img %}
-          <div class="col-md-6">
-            {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 156px, 50vw" alt="project thumbnail" class="card-img" %}
-          </div>
-        {% endif %}
-        <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">
-          <div class="card-body">
-            <h3 class="card-title">{{ project.title }}</h3>
-            <p class="card-text">{{ project.description }}</p>
-            <div class="row ml-1 mr-1 p-0">
-              {% if project.github %}
-                <div class="github-icon">
-                  <div class="icon" data-toggle="tooltip" title="Code Repository">
-                    <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-                  </div>
-                  {% if project.github_stars %}
-                    <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                      <i class="fa-solid fa-star"></i>
-                      <span id="{{ project.github_stars }}-stars"></span>
-                    </span>
-                  {% endif %}
-                </div>
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      </div>
+  <a class="project-overlay-card" href="{{ project_link }}">
+    {% if project.img %}
+      <img
+        class="project-overlay-img"
+        src="{{ project.img | relative_url }}"
+        alt="{{ project.title | escape }}"
+        loading="lazy"
+      >
+    {% endif %}
+    <div class="project-overlay-panel">
+      <h3 class="project-overlay-title">{{ project.title }}</h3>
+      {% if project.description %}
+        <p class="project-overlay-desc">{{ project.description }}</p>
+      {% endif %}
     </div>
   </a>
 </div>

@@ -1,6 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
 // Dimensions
@@ -39,4 +40,116 @@ html[data-theme='dark'] a {
 
 html[data-theme='dark'] a:hover {
   color: #fcd34d !important;
+}
+
+// ---------------------------------------------------------------
+// Bio on the About page: justified text
+// ---------------------------------------------------------------
+.post article > .clearfix p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+// ---------------------------------------------------------------
+// Project cards: full-bleed image with a translucent gray text
+// panel on the right side
+// ---------------------------------------------------------------
+.project-overlay-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 4; // vertical card
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: none;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  }
+
+  &:hover .project-overlay-img {
+    transform: scale(1.05);
+  }
+}
+
+.project-overlay-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-overlay-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 58%;
+  padding: 1.5rem 1.25rem;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+// Same font and case as the theme's original cards
+.project-overlay-title {
+  margin: 0 0 0.75rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  transition: color 0.2s ease;
+}
+
+.project-overlay-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+// Light mode: light gray panel, dark text, purple on hover
+html:not([data-theme='dark']) {
+  .project-overlay-panel {
+    background: rgba(243, 244, 246, 0.60);
+  }
+  .project-overlay-title {
+    color: #1f2937;
+  }
+  .project-overlay-desc {
+    color: #4b5563;
+  }
+  .project-overlay-card:hover .project-overlay-title {
+    color: #7c3aed;
+  }
+}
+
+// Dark mode: gray panel, light text, gold on hover
+html[data-theme='dark'] {
+  .project-overlay-panel {
+    background: rgba(38, 39, 43, 0.6);
+  }
+  .project-overlay-title {
+    color: #f3f4f6;
+  }
+  .project-overlay-desc {
+    color: #b8bcc4;
+  }
+  .project-overlay-card:hover .project-overlay-title {
+    color: #fcd34d;
+  }
+}
+
+// On phones, give the text a little more room
+@media (max-width: 575.98px) {
+  .project-overlay-panel {
+    width: 62%;
+  }
+  
+}
+
+.project-overlay-card:hover .project-overlay-desc {
+  font-weight: 600;
 }
