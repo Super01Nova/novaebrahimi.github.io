@@ -153,3 +153,15 @@ html[data-theme='dark'] {
 .project-overlay-card:hover .project-overlay-desc {
   font-weight: 600;
 }
+
+
+html[data-theme='dark'] .post:has(.projects) .post-title {
+  color: #fbbf24;
+}
+
+.post:has(#toc-sidebar) article h2 {
+  margin-top: 3.5rem;
+}
+.post:has(#toc-sidebar) article h3 {
+  margin-top: 2rem;
+}

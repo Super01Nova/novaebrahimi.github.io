@@ -12,8 +12,8 @@ toc:
 
 | | |
 |---|---|
-| **My role** | Lead UX researcher (solo): study design, recruiting, moderation, synthesis, reporting |
-| **Timeline** | 2024 to 2026 |
+| **My role** | Lead UX researcher (solo): study design, recruiting, moderation, synthesis, reporting |{% comment %}
+| **Timeline** | 2024 to 2026 |{% endcomment %}
 | **Methods** | Segmented focus groups, comparative evaluation, thematic analysis |
 | **Tools** | Zoom, ATLAS.ti |
 | **Outputs** | Platform-by-activity guidance, 23 design opportunities, one publication |
@@ -97,4 +97,4 @@ The platforms are complements, not competitors. Each one's strengths cover the o
   <a href="{{ '/assets/pdf/ebrahimi2025student.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
   <a href="https://doi.org/10.1109/DEMOcon65705.2025.XXXXXXXX" class="btn btn-sm z-depth-0" role="button">Online</a> <!-- TODO: replace XXXXXXXX with this paper's IEEE Xplore DOI number -->
 
-**Related case studies:** [Why Copied Classrooms Sit Empty: Lessons from Expert Educators]({{ '/projects/1_educator-interviews/' | relative_url }}) · [Same Actions, Different Signals: Patterns Across Seven Virtual Worlds]({{ '/projects/3_interface-patterns/' | relative_url }})
+**Related case studies:** [Why Copied Classrooms Sit Empty: Lessons from Expert Educators]({{ '/projects/1_educator-interviews/' | relative_url }}) · [Same Actions, Different Signals:  Virtual World Design Patterns]({{ '/projects/3_interface-patterns/' | relative_url }})

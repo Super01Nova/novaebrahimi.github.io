@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Same Actions, Different Signals: Patterns Across Seven Virtual Worlds"
+title: "Same Actions, Different Signals:  Virtual World Design Patterns"
 description: AI-assisted comparative interface analysis using a vision-language model, clustering, and expert review
 img: assets/img/case-studies/p3-thumb.png
 importance: 3
@@ -12,8 +12,8 @@ toc:
 
 | | |
 |---|---|
-| **My role** | Researcher and pipeline engineer (solo): study design, screen capture, extraction schema, ML pipeline, analysis, pattern review |
-| **Timeline** | 2025 to 2026 |
+| **My role** | Researcher and pipeline engineer (solo): study design, screen capture, extraction schema, ML pipeline, analysis, pattern review |{% comment %}
+| **Timeline** | 2025 to 2026 |{% endcomment %}
 | **Methods** | Comparative interface analysis, AI-assisted element extraction, clustering with stability testing, expert review |
 | **Tools** | Python, Qwen2.5-VL-72B, HDBSCAN, SLURM on a university GPU cluster |
 | **Outputs** | 35 interface pattern candidates, a repeatable analysis procedure, a 103-pattern catalog combined with my user research |

@@ -13,7 +13,8 @@ toc:
 | | |
 |---|---|
 | **My role** | Lead UX researcher (solo): study design, recruiting, interviews, synthesis, reporting |
-| **Timeline** | 2024 to 2025 |
+{% comment %}
+| **Timeline** | 2024 to 2025 |{% endcomment %}
 | **Methods** | In-depth interviews, pilot testing of the discussion guide, thematic analysis |
 | **Tools** | Zoom, Qualtrics, ATLAS.ti |
 | **Outputs** | Experience framework (SSE Model), 56 design opportunities, four publications |
@@ -121,4 +122,4 @@ I coded alone to keep interpretation consistent across a large, context-heavy da
   <a href="{{ '/assets/pdf/ebrahimi2025advantages.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
   <a href="https://doi.org/10.1109/DEMOcon65705.2025.11282851" class="btn btn-sm z-depth-0" Replace: role="button" target="_blank" rel="noopener noreferrer">Online</a>
 
-**Related case studies:** [Virtual Worlds or Video Calls? It Depends on the Activity]({{ '/projects/2_student-focus-groups/' | relative_url }}) · [Same Actions, Different Signals: Patterns Across Seven Virtual Worlds]({{ '/projects/3_interface-patterns/' | relative_url }})
+**Related case studies:** [Virtual Worlds or Video Calls? It Depends on the Activity]({{ '/projects/2_student-focus-groups/' | relative_url }}) · [Same Actions, Different Signals: Virtual World Design Patterns]({{ '/projects/3_interface-patterns/' | relative_url }})
